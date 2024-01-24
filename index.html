@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed"
+dir="ltr"
+data-theme="theme-default"
+data-assets-path="./assets/"
+data-template="vertical-menu-template-free">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetrum</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+    <link rel="stylesheet" href="./assets/css/hamburgers.css">
+    <!-- link box-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- link owl-carousel -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+</head>
+<body>
+    <header>
+        <a href="#"><img src="./assets/img/landing-page/logo.png" class="logo"></a>
+        <ul class="navigasi">
+            <button class="hamburger hamburger--elastic-r" id="menu-icon" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <li><span><a href="#home">Home</a></span></li>
+            <li><span><a href="#order">Order</a></span></li>
+            <li><span><a href="#destination">Destinataion</a></span></li>
+            <li><span><a href="#about">About</a></span></li>
+            <li><a style="outline: 1px solid #0071CA; padding: 3px 10px; margin-left: 10px;" href="./html/auth-login-basic.html">Login</a></li>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <div class="owl-carousel">
+            <div class="item"><img src="./assets/img/landing-page/img1.jpg" alt=""></div>
+            <div class="item"><img src="./assets/img/landing-page/img2.jpg" alt=""></div>
+            <div class="item"><img src="./assets/img/landing-page/img3.jpg" alt=""></div>
+            <div class="item"><img src="./assets/img/landing-page/img4.jpg" alt=""></div>
+        </div>
+        <div class="order" id="order">
+            <div class="animasi">
+                <iframe src="https://lottie.host/embed/1538ccc3-8511-4209-bfdc-fe18bbf0df0a/ZoqbQgvHb2.json" style="border: 0;" ></iframe>
+            </div>
+            <h2>Find a ticket</h2>
+            <span>Set the ferry</span>
+            <div class="order-form">
+                <div class="form-col">
+                    <label for="pelabuhanAsal">Origin port:</label>
+                    <select name="" id="pelabuhanAsal">
+                        <option value="">Select the origin</option>
+                        <option value="">Bakauheni, Lampung</option>
+                        <option value="">Ciwandan, Banten</option>
+                        <option value="">Gilimanuk, Bali</option>
+                        <option value="">Ketapang, Jawa Timur</option>
+                        <option value="">Merak Banten</option>
+                        <option value="">Ajibata, Sumatra Utara</option>
+                        <option value="">Ambarita, Sumatra Utara</option>
+                        <option value="">Labuan Bajo, Nusa Tenggara Timur</option>
+                        <option value="">Lembar, Nusa Tenggara Barat</option>
+                        <option value="">Padang Bai, Bali</option>
+                        <option value="">Sape, Nusa Tenggara Barat</option>
+                    </select>
+                </div>
+                <div class="form-col">
+                    <label for="pelabuhanTujuan">Destination port:</label>
+                    <select name="" id="pelabuhanTujuan">
+                        <option value="">Select a destination</option>
+                        <option value="">Merak, Banten</option>
+                        <option value="">Bakauheni, Lampung</option>
+                        <option value="">Ketapang, Jawa Timur</option>
+                        <option value="">Gilimanuk, Bali</option>
+                        <option value="">Bakauheni, Lampung</option>
+                        <option value="">Ambarita, Sumatra Utara</option>
+                        <option value="">Ajibata, Sumatra Utara</option>
+                        <option value="">Sape, Nusa Tenggara Barat</option>
+                        <option value="">Padang Bai, Bali</option>
+                        <option value="">Lembar, Nusa Tenggara Barat</option>
+                        <option value="">Labuan Bajo, Nusa Tenggara Timur</option>
+                    </select>
+                </div>
+                <div class="form-col">
+                    <label for="kelasLayanan">Service class:</label>
+                    <select id="kelasLayanan" name="kelasLayanan">
+                        <option value="">Select a service</option>
+                        <option value="ekonomi">Express</option>
+                        <option value="bisnis">Reguler</option>
+                    </select>
+                </div>
+
+                <div class="form-col">
+                    <label for="jadwalMasukPelabuhan">Port admission schedule:</label>
+                    <input type="datetime-local" id="jadwalMasukPelabuhan" name="jadwalMasukPelabuhan">
+                </div>
+                <div class="form-col">
+                    <label for="jenisPenggunaJasa">Types of service users:</label>
+                    <select id="jenisPenggunaJasa" name="jenisPenggunaJasa">
+                        <option value="">Drive or not?</option>
+                        <option value="Pejalan">Pedestrian</option>
+                        <option value="Berkendara">Driving</option>
+                    </select>
+                </div>
+                <div class="form-col">
+                    <label for="penumpang">Passenger type:</label>
+                    <input type="number" id="penumpang" name="penumpang" min="1" placeholder="0">
+                </div>
+
+                <button type="submit">Order</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-container" id="destination">
+        <h1>Preffered Destination</h1>
+        <div class="destinasi">
+            <div class="box">
+                <a href="./html/labuan-bajo.html">
+                    <h6>Labuan Bajo</h6>
+                    <img src="./assets/img/gallery/labuan bajo.webp">
+                </a>
+            </div>
+            <div class="box">
+                <a href="./html/nusa-panida.html">
+                    <h6>Nusa Penida</h6>
+                    <img src="./assets/img/gallery/nusa penida.jpg">
+                </a>
+            </div>
+            <div class="box">
+                <a href="./html/padang-bai.html">
+                    <h6>Padang Bai</h6>
+                    <img src="./assets/img/gallery/padang bai.jpg">
+                </a>
+            </div>
+            <div class="box">
+                <a href="./html/selat-sape1.html">
+                    <h6>Selat Sape</h6>
+                    <img src="./assets/img/gallery/Komodo_Island_north_aerial.jpg">
+                </a>
+            </div>
+            <div class="box">
+                <a href="./html/gili-ketapang.html">
+                    <h6>Gili Ketapang</h6>
+                    <img src="./assets/img/gallery/ketapang2.jpg">
+                </a>
+            </div>
+            <div class="box">
+                <a href="./html/lembar.html">
+                    <h6>Lembar</h6>
+                    <img src="./assets/img/gallery/lembar NTB.webp">
+                </a>
+            </div>
+            <div class="box">
+                <a href="./html/ajibata.html">
+                    <h6>Ajibata</h6>
+                    <img src="./assets/img/gallery/ajibata.jpg">
+                </a>
+            </div>
+            <div class="box">
+                <a href="./html/lampung.html">
+                    <h6>Lampung</h6>
+                    <img src="./assets/img/gallery/menara-siger.webp">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-container" id="about">
+        <h1>About Us</h1>
+        <div class="box-container">
+            <div class="box">
+                <div>
+                    <a href="https:/instagram.com/ancient.orchids" target="_blank">
+                        <i class="bx bxl-instagram"></i>
+                        <img src="./assets/img/avatars/ingbri.webp">
+                    </a>
+                    <p><span>Ketua</span><br>Indri Rachma</p>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <a href="https:/instagram.com/iizmilarifinn" target="_blank">
+                        <i class="bx bxl-instagram"></i>
+                        <img src="./assets/img/avatars/apin.webp">
+                    </a>
+                    <p><span>Anggota</span><br>Izmil Arifin</p>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <a href="https:/instagram.com/and_r_fly" target="_blank">
+                        <i class="bx bxl-instagram"></i>
+                        <img src="./assets/img/avatars/api.webp">
+                    </a>
+                    <p><span>Anggota</span><br>Muhammad Nur Raply</p>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <a href="https:/instagram.com/abdullahqaidmuaadz" target="_blank">
+                        <i class="bx bxl-instagram"></i>
+                        <img src="./assets/img/avatars/muaadz.jpg">
+                    </a>
+                    <p><span>Anggota</span><br>Abdullah Qa'id Mu'aadz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <form>
+            <h3>Have a fun experience.</h3>
+            <p>Subscribe now to get a discount!</p>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Your email">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+        <a href="#"><h1>Fe<span>Trum</span></h1></a>
+        <p>Copyright 2024 © HG. All rights reserved.</p>
+    </footer>
+
+    
+
+
+    <!-- link owl-carousel -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+    <!-- link box-icon -->
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <script src="./assets/js/landing-page.js"></script>
+</body>
+</html>

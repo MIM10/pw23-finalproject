@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery-container {
+    margin: 100px 50px 0 50px;
+}
+.gallery-container h1, .about-container h1 {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.destinasi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* justify-self: space-around; */
+    gap: 20px;
+}
+
+.gallery-container .box {
+    transition: .3s;
+}
+
+.gallery-container .box a {
+    position: relative;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.gallery-container .box h6 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 0.90rem;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    padding-bottom: 30px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to top, #000000, #00000001);
+    z-index: 1;
+}
+
+.gallery-container .box a img {
+    transform: scale(1.1);
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.gallery-container .box a img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.about-container {
+    margin: 100px 50px 0 50px;
+    transition: 0.5ms;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-container .box a {
+    background-color: rgba(157, 157, 156, 0.403);
+    border-radius: 50%;
+}
+
+.box-container .box {
+    position: relative;
+    border-radius: 50%;
+    transition: 0.5s ;
+}
+
+.box-container .box p {
+    text-align: center;
+    /* font-weight: 600; */
+}
+
+.box-container .box p span {
+    text-align: center;
+    font-weight: 600;
+}
+
+.box-container .box .bx {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #a6a4a410;
+    border-radius: 50%;
+    font-size: 6em;
+    color: #fff;
+    height: 79.5%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.box-container .box a:hover .bx {
+    display: flex;
+}
+
+.box-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
